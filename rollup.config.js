@@ -2,12 +2,11 @@ import resolve from 'rollup-plugin-node-resolve';
 import babel from 'rollup-plugin-babel';
 
 export default {
-    input: './index.js',
-    output: {
-      file: 'build/d3-sketchy.js',
-      name: 'd3',
-      format: 'umd'
-    },
+    entry: 'index.js',
+    dest: 'build/d3-sketchy.js',
+    format: 'umd',
+    moduleName: 'd3',
+    sourceMap: true,
     plugins: [
         resolve(),
         babel({
