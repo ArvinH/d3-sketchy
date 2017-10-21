@@ -1,39 +1,15 @@
-d3.sketchy consists of three ways to make your dataviz look more sketchy:
+# d3-foo
 
-d3.sketchy.circle creates an SVG circle element with an SVG path element over it that looks like a hand-drawn circle. The current circle outline is too static and needs to be improved, but by adjusting the strokeWidth property a bit among your circles, you can make them look different.
+YOUR DESCRIPTION HERE. Replace all instances of `foo` in this file with the name of your new plugin.
 
-d3.sketchy.rect does the same things for rectangles and includes a .jostle property to make them more or less off-kilter.
+## Installing
 
-d3.sketchy.randomColor takes a color and a range (between 0 and 1) and returns a color that has been perturbed along HSL by that range. Notice that pure hues need more perturbation to be readily visible.
+If you use NPM, `npm install d3-foo`. Otherwise, download the [latest release](https://github.com/d3/d3-foo/releases/latest).
 
-The circles and rects work in a pretty straightforward manner similar to the SVG components already in D3:
+## API Reference
 
-      var sketchyRectangle = d3.sketchy.rect();
-      sketchyRectangle
-      .height(100)
-      .width(50)
-      .x(100)
-      .y(100)
-      .stroke("black")
-      .strokeWidth(10)
-      .jostle(5)
-      
-      d3.select("#someParent").call(sketchyRectangle);
+YOUR API DOCUMENTATION HERE. Use bold for symbols (such as constructor and method names) and italics for instances. See the other D3 modules for examples.
 
-Likewise for a circle:
+<a href="#foo" name="foo">#</a> <b>foo</b>()
 
-      var sketchyCircle = d3.sketchy.circle();
-      sketchyCircle
-      .radius(15)
-      .cx(150)
-      .cy(150)
-      .fill("red")
-      .stroke("black")
-      .strokeWidth(10);
-      
-      d3.select("#someContainer").call(sketchyCircle);
-
-Sketchy colors are just:
-d3.sketchy.randomColor("pink",.075);
-
-Here's an [interactive example using circle-packing, brushing and bar charts](http://bl.ocks.org/emeeks/4e80576b894730d5cb6b). 
+Computes the answer to the ultimate question of life, the universe, and everything.
