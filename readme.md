@@ -1,15 +1,7 @@
-# d3-foo
+# d3-sketchy
 
-YOUR DESCRIPTION HERE. Replace all instances of `foo` in this file with the name of your new plugin.
+forked from [emeeks/d3-sketchy](https://github.com/emeeks/d3-sketchy)
 
-## Installing
+## Demo
 
-If you use NPM, `npm install d3-foo`. Otherwise, download the [latest release](https://github.com/d3/d3-foo/releases/latest).
-
-## API Reference
-
-YOUR API DOCUMENTATION HERE. Use bold for symbols (such as constructor and method names) and italics for instances. See the other D3 modules for examples.
-
-<a href="#foo" name="foo">#</a> <b>foo</b>()
-
-Computes the answer to the ultimate question of life, the universe, and everything.
+![Demo](./image/d3-sketchy-demo.png)

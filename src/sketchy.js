@@ -6,7 +6,7 @@ let d3sketchy = {};
 // for foo test
 d3sketchy.foo = () => { return 42; };
 
-d3sketchy.rect = (selection) => {
+d3sketchy.rect = function(selection) {
 
   let rh = 50, rw = 10, w = 2, c = [0, 0], fillColor = "red", strokeColor = "black", jostle = 0;
 
