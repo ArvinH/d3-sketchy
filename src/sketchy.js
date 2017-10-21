@@ -134,49 +134,49 @@ d3sketchy.rect = (selection) => {
     return this;
   }
 
-  d3_sketchyRect.height = (data) => {
+  d3_sketchyRect.height = function(data) {
     if (!arguments.length) return rh;
     rh = data;
     return this;
   }
 
-  d3_sketchyRect.width = (data) => {
+  d3_sketchyRect.width = function(data) {
     if (!arguments.length) return rw;
     rw = data;
     return this;
   }
 
-  d3_sketchyRect.x = (data) => {
+  d3_sketchyRect.x = function(data) {
     if (!arguments.length) return c[0];
     c[0] = data;
     return this;
   }
 
-  d3_sketchyRect.y = (data) => {
+  d3_sketchyRect.y = function(data) {
     if (!arguments.length) return c[1];
     c[1] = data;
     return this;
   }
 
-  d3_sketchyRect.fill = (data) => {
+  d3_sketchyRect.fill = function(data) {
     if (!arguments.length) return fillColor;
     fillColor = data;
     return this;
   }
 
-  d3_sketchyRect.stroke = (data) => {
+  d3_sketchyRect.stroke = function(data) {
     if (!arguments.length) return strokeColor;
     strokeColor = data;
     return this;
   }
 
-  d3_sketchyRect.strokeWidth = (data) => {
+  d3_sketchyRect.strokeWidth = function(data) {
     if (!arguments.length) return w;
     w = data;
     return this;
   }
 
-  d3_sketchyRect.jostle = (data) => {
+  d3_sketchyRect.jostle = function(data) {
     if (!arguments.length) return jostle;
     jostle = data;
     return this;
@@ -186,7 +186,7 @@ d3sketchy.rect = (selection) => {
 
 }
 
-d3sketchy.randomColor = (baseColor, range) => {
+d3sketchy.randomColor = function(baseColor, range) {
   const hslBase = d3.hsl(baseColor)
   hslBase.h = hslBase.h + (Math.floor(Math.random() * (range * 255)) - Math.floor(range / 2));
   hslBase.s = hslBase.s + (Math.floor(Math.random() * range) - Math.floor(range / 2));
